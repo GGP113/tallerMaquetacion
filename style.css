@@ -1,0 +1,322 @@
+
+     body{
+
+        font-family: "Alumni Sans Pinstripe", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .displayMobile{
+
+        display: flex;
+        flex-direction: column;
+       
+        
+        flex-wrap: wrap;
+
+        border-top: 2px solid ;
+        border-left: 2px solid ;
+        border-right: 2px solid ;
+
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        
+    }
+
+    .displayMobile>*{
+
+        text-align: center;
+        background-color: rgb(178, 214, 255);
+
+    }
+
+    .displayMobile>div:nth-child(2){
+
+        height: 2rem;
+        background-color: rgb(89, 149, 218);
+    }
+
+    .navMobile{
+
+        display: flex;
+        
+        height: 70%;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(246, 247, 248);
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+         
+    }
+
+    .navMobile> div:first-child{
+        
+        width: 50%;
+        margin: 15px;
+        height: 40px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .navMobile> *{
+
+        border: 2px solid grey;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: white;
+
+
+    }
+
+
+
+
+    h2{
+        font-size: 25px;
+
+    }
+
+    .imgPC{
+
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        
+        background-color: rgb(234, 237, 240);
+
+        border-left: 2px solid;
+        border-right: 2px solid;
+    }
+
+
+
+
+    .blockFeatures> div:first-child{
+
+        background-color: rgb(214, 233, 254);
+    }
+
+
+    .blockFeatures > div:nth-child(2){
+
+        background-color: rgb(245, 207, 142);
+    }
+
+    .blockFeatures > div:nth-child(3){
+
+        background-color: rgb(240, 154, 157);
+    }
+
+    .blockFeatures> div:last-child{
+
+        background-color: rgb(200, 198, 250);
+
+    }
+
+
+
+
+  @media (max-width: 557px){
+
+    .imgPC{
+
+        padding: 4rem;
+    }
+
+    .imgPC > *{
+
+        height: 7rem;
+
+    }
+
+    .blockFeatures{
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        border: 2px solid;
+        border-top: 0px;
+        text-align: center;
+
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+
+   
+
+    .blockFeatures> div:last-child{
+
+       
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+
+  }
+
+
+  @media (min-width: 558px) and (max-width: 1080px){
+
+    .imgPC{
+
+        padding: 3rem;
+    }
+
+    .imgPC > *{
+
+        width: 35rem;
+        height: 15rem;
+
+    }
+
+
+    .blockFeatures{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
+        border-left: 2px solid;
+        border-right: 2px solid;
+        border-bottom: 2px solid;
+
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+
+        text-align: center;
+
+
+    }
+
+    .blockFeatures> div:last-child{
+
+       
+       
+        border-bottom-right-radius: 15px;
+    }
+
+    .blockFeatures> div:nth-child(3){
+
+        border-bottom-left-radius: 15px;
+    }
+
+
+
+
+  }
+
+
+
+  @media (min-width: 1081px){
+
+    .imgPC{
+
+        order: 1;
+        padding: 1rem;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-bottom: 2px solid;
+    }
+
+
+    .imgPC > *{
+
+        width: 50rem;
+        height: 25rem;
+
+    }
+
+    .blockFeatures{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
+        text-align: center;
+
+
+    }
+
+    .singUp{
+
+        grid-column: span 3;
+    }
+
+
+
+
+
+
+    .blockFeatures> div:first-child{
+
+        background-color: rgb(245, 207, 142);
+        border-left: 2px solid;
+    }
+
+
+
+    .blockFeatures> div:first-child>h1{
+
+            visibility: hidden;
+            
+        }
+
+    .blockFeatures> div:first-child>h1::before{
+
+        content: "(FEATURE)";
+        visibility: visible;
+        margin-left: 5rem;
+    }
+
+
+
+
+
+    .blockFeatures > div:nth-child(2){
+
+        background-color: rgb(200, 198, 250);
+    }
+
+
+    .blockFeatures> div:last-child{
+
+        background-color: rgb(214, 233, 254);
+        border-left: 2px solid;
+        border-right: 2px solid;
+        
+
+    }
+
+
+    .blockFeatures > div:nth-child(3){
+
+        border-right: 2px solid;
+        
+        
+    }
+
+    .blockFeatures> div:last-child >h1{
+
+        visibility: hidden;
+    }
+
+
+    .blockFeatures> div:last-child >h1::before{
+
+        content: "(SIGN UP)";
+        visibility: visible;
+        margin-left: 11rem;
+    }
+
+
+
+
+  }
+
