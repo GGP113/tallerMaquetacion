@@ -1,0 +1,298 @@
+.barraNav{
+
+    display: flex;
+    justify-content: space-between;
+    
+    margin-bottom: 3rem;
+    
+}
+
+
+.barraNav > div:first-child{
+
+    display: flex;
+    width: 6rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.barraNav > div:first-child > div:first-child{
+
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid;
+    border-radius: 50%;
+    
+}
+
+
+.barraNav > div:first-child>*{
+
+    width:3rem;
+    height: 1rem;
+    border: 2px solid;
+    background-color: black;
+}
+
+.barraNavCuadros{
+
+    display: flex;
+    width: 20rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.barraNavCuadros>*{
+
+    width: 4rem;
+    height: 1.5rem;
+    
+    background-color: black;
+}
+
+.sectionOne{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.sectionOne>*{
+
+    width: 50%;
+    
+    
+}
+
+.sectionOneCirculo{
+
+    width: 20rem;;
+    height: 20rem;
+    
+    border-radius: 50%;
+    background-color: red;
+}
+
+
+
+.sectionTwo{
+
+    display: flex;
+}
+
+.cuadros{
+
+    width: 32%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:2rem;
+
+    
+}
+
+.texto{
+
+    display: flex;
+   
+    width: 63%;
+    margin-left: 5%;
+    
+}
+
+.texto>*{
+    width: 50%;
+}
+
+
+.cuadros>*{
+
+    border: 2px solid;
+    height: 10rem;
+}
+
+
+.cuadros > div:first-child{
+
+    background-color: red;
+}
+
+.cuadros > div:nth-child(2){
+
+    background-color: yellow;
+}
+
+.cuadros > div:last-child{
+
+    background-color: blue;
+}
+
+
+
+.lista>*{
+
+    display: flex;
+    align-content: space-between;
+    border: 2px;
+}
+
+
+
+
+
+.cuadroLista>*{
+
+    width: 25px;
+    height: 25px;
+    border: 2px solid;
+    margin-top: 1.5rem;
+    margin-right: 1rem;
+    background-color: black;
+
+    
+}
+
+
+@media(max-width:557px){
+
+ 
+
+
+
+    .barraNav{
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+    
+    
+    }
+
+
+    .sectionOne{
+
+    display: flex;
+    flex-direction: column;
+    
+    
+    margin-bottom: 5rem;
+    }
+
+    .sectionOne>*{
+
+    width: 100%;
+
+    
+    
+    }
+
+    .sectionOneCirculo{
+
+    width: 20rem;;
+    height: 20rem;
+    
+    border-radius: 50%;
+    background-color: green;
+    margin-top: 3rem;
+    }
+
+    .sectionTwo{
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    }
+
+
+    .cuadros{
+
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:2rem;
+
+    
+    }
+
+
+    .texto{
+
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    margin-left: 0%;
+    
+    
+    }
+
+    .texto>*{
+    width: 100%;
+    }
+
+ 
+
+
+
+}
+
+
+@media(min-width:558px) and (max-width:1080px){
+
+
+    .sectionTwo{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .cuadros{
+
+    width: 100%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    gap:1rem;
+    
+    
+    }
+
+    .cuadros>*{
+
+    border: 2px solid;
+    width: 30%;
+    height: 8rem;
+
+    }
+
+    .texto{
+
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .sectionOneCirculo{
+
+        background-color: yellow;
+    }
+
+    
+
+
+
+
+
+
+
+}
+
+
